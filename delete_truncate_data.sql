@@ -1,0 +1,15 @@
+USE Abhishek;
+
+DELETE FROM users WHERE id = 3;
+
+DELETE FROM users;
+
+TRUNCATE TABLE users;
+TRUNCATE TABLE addresses;
+
+SET AUTOCOMMIT = 0;
+COMMIT;
+ROLLBACK;
+SET AUTOCOMMIT = 1;
+
+SELECT * FROM users;
